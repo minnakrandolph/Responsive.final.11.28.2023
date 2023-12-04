@@ -16,6 +16,10 @@ header {
     background-size: cover;
     padding: 200px 0; 
 }
+header h1 {
+  font-size: 50px;
+}
+
 header a {
     text-align: center;
 }
@@ -52,7 +56,7 @@ main {
   }
 
   section {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 100px;
 }
@@ -60,6 +64,7 @@ main {
     background-color: white;
     margin: 30px 0;
 }
+
 .card-header.grid {
     grid-gap: 0;
 }
@@ -73,12 +78,13 @@ main {
 }
 .btn {
     display: block;
+    font-family: PT Mono;
     color: white;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
     padding: 16px;
-    background-color: #462cb3;
+    background-color: #b3572c;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -90,6 +96,11 @@ main {
     font-weight: 700;
     line-height: 1.5;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
   .grid-2-columns {
         grid-template-columns: 1fr 1fr;
     }
@@ -110,7 +121,24 @@ main {
     margin: 30px 0;
 }
 
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+.card-header.grid {
+  grid-gap: 0;
+}
 
+.card-body {
+  padding: 30px;
+
+}
+.card-footer {
+   padding: 0 30px 30px;
+}
+
+
+  
 
 footer {
     color: white;
@@ -126,9 +154,12 @@ footer {
   }
   
   footer h3 {
+    text-align: left;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
+    
+
   }
   
   footer p {
@@ -152,5 +183,25 @@ footer {
   footer a {
     color: white;
     opacity: 0.7;
+  }
+
+
+  @media (max-width: 960px) {
+    header {
+      padding: 60px 0;
+    }
+  
+    header h1 {
+      font-size: 48px;
+    }
+  
+    header h2 {
+      font-size: 20px;
+    }
+  
+    header h3 {
+      font-size: 12px;
+    }
+
   }
 
