@@ -52,8 +52,6 @@ header a {
   border-radius: 5px;
 }
 
-
-
 main {
     background-color: rgb(255, 251, 247);
   }
@@ -109,6 +107,12 @@ main {
   border-radius: 5px;
 }
 
+.img-responsive {
+  max-width: 90%;
+  display: block;
+  border-radius: 5px;
+}
+
 
 .card {
     background-color: rgb(224, 216, 250);
@@ -116,8 +120,22 @@ main {
     padding: 30px;
 }
 
-.card-header.grid {
-    grid-gap: 0;
+.card-header .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-responsive-card {
+  max-width: 100%;
+  display: block;
+
 }
 
 .card-body {
@@ -147,7 +165,7 @@ main {
 
 }
 .card h3 {
-  font-family: PT Mono;
+  font-family: Times, serif;
 }
 .card h4 {
   font-family: PT Mono;
@@ -163,16 +181,11 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-  .grid-2-columns {
-        grid-template-columns: 1fr 1fr;
-    }
-  
+.grid-3-columns {
+      grid-gap: 64px;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
 
-  .img-responsive {
-    max-width: 90%;
-    display: block;
-    border-radius: 5px;
-}
 
 .embed {
     width: 100%;
@@ -240,6 +253,7 @@ footer {
     opacity: 0.7;
     margin-right: 20px;
     line-height: 24px;
+    text-align: left;
   }
   
   footer ul {
@@ -248,13 +262,14 @@ footer {
   
   footer li {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
   
   footer a {
     color: white;
     opacity: 0.7;
+    text-align: left;
   }
 
 
@@ -273,6 +288,16 @@ footer {
   
     header h3 {
       font-size: 12px;
+    }
+    .grid-2-columns {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+
+    .grid-3-columns {
+      display: grid;
+      grid-template-columns: 1fr;
     }
 
     .footer-grid {
