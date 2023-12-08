@@ -319,6 +319,11 @@ footer {
       grid-template-columns: 1fr;
     }
 
+    footer a {
+      display: block;
+
+    }
+
     .footer-grid {
       display: grid;
       grid-template-columns: 1fr;
