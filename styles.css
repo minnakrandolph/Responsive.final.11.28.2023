@@ -8,11 +8,12 @@ body {
     margin: 0 auto;
 }
 .container h1 {
-    font-family:  Times, serif;
+    font-family: Times, serif;
     color: bisque;
     text-align: center;
 }
-.container  h2, h3 {
+
+.container h3, h2 {
   font-family: PT Mono;
   color: bisque;
   text-align: center;
